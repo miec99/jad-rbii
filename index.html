@@ -56,9 +56,14 @@
 
         nav .links {
             display: flex;
-            gap: 2rem;
+            gap: 0.6rem 1rem;
             align-items: center;
             list-style: none;
+            /* Sites with many sections: wrap onto extra rows instead of pushing
+               the whole page sideways (horizontal-overflow bug, 28 Jul 2026). */
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            min-width: 0;
         }
 
         nav .links a {
@@ -569,7 +574,7 @@
         <nav>
             <a href="#" class="logo">J</a>
             <ul class="links">
-                <li><a href="#research-&-publications">Research &amp; Publications</a></li><li><a href="#projects">Projects</a></li><li><a href="#internships-&-programs">Internships &amp; Programs</a></li><li><a href="#leadership-programs">Leadership Programs</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#honours-&-awards">Honours &amp; Awards</a></li><li><a href="#athletics">Athletics</a></li><li><a href="#skills-&-languages">Skills &amp; Languages</a></li><li><a href="#interests">Interests</a></li><li><a href="#community-&-volunteering">Community &amp; Volunteering</a></li>
+                <li><a href="#education">Education</a></li><li><a href="#internships-&-programs">Internships &amp; Programs</a></li><li><a href="#research-&-publications">Research &amp; Publications</a></li><li><a href="#projects">Projects</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#athletics">Athletics</a></li><li><a href="#honours-&-awards">Honours &amp; Awards</a></li><li><a href="#skills-&-languages">Skills &amp; Languages</a></li><li><a href="#community-&-volunteering">Community &amp; Volunteering</a></li><li><a href="#leadership-programs">Leadership Programs</a></li>
                 <li><a href="assets/doc-4909aac7f7.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer" download>Resume</a></li>
             </ul>
         </nav>
@@ -585,14 +590,63 @@
 
         <div class="bio">As an IB Diploma student at GEMS Dubai American Academy, I have a diverse background and strong interests in finance, trading, entrepreneurship, and business. My experiences include internships at various companies, participation in university summer programs, and publishing research papers. I am always eager to learn and develop new skills to apply to my future career.</div>
 
-        <section id="research-&-publications"><h2>Research &amp; Publications</h2><div class="research-paper">
+        <section id="education"><h2>Education</h2><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Grade 11 student, IB Diploma</h3>
+                            <span class="experience-duration">Currently</span>
+                        </div>
+                        <div class="experience-company">GEMS Dubai American Academy (DAA)</div>
+                        <div class="experience-description"></div>
+                    </div><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Lower School and Middle School</h3>
+                            <span class="experience-duration">2012–2023</span>
+                        </div>
+                        <div class="experience-company">Casablanca American Academy (CAS)</div>
+                        <div class="experience-description"></div>
+                    </div></section><div class="section-divider"></div><section id="internships-&-programs"><h2>Internships &amp; Programs</h2><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Summer Intern</h3>
+                            <span class="experience-duration">August 2026</span>
+                        </div>
+                        <div class="experience-company">OCP Group</div>
+                        <div class="experience-description">Gained insights into sustainability and decarbonization in the phosphate industry, explored business functions, and developed foundational workplace skills.</div>
+                    </div><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Participant</h3>
+                            <span class="experience-duration">July 2026</span>
+                        </div>
+                        <div class="experience-company">Bocconi University Summer School</div>
+                        <div class="experience-description">Collaborated on real-world projects and explored business fields such as economics and finance.</div>
+                    </div><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Summer Intern</h3>
+                            <span class="experience-duration">June 2026</span>
+                        </div>
+                        <div class="experience-company">AbbVie Biopharmaceuticals</div>
+                        <div class="experience-description">Gained introductory experience in the biopharmaceutical industry, focusing on finance and compliance.</div>
+                    </div><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Summer Intern</h3>
+                            <span class="experience-duration">July 2025</span>
+                        </div>
+                        <div class="experience-company">Casablanca Stock Exchange</div>
+                        <div class="experience-description">Learned about trading mechanisms, financial instruments, and market regulations.</div>
+                    </div><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Participant</h3>
+                            <span class="experience-duration">2024</span>
+                        </div>
+                        <div class="experience-company">Beau Soleil Collège Alpin International Summer Camp</div>
+                        <div class="experience-description">Developed leadership and language skills in a multicultural environment while enhancing global awareness.</div>
+                    </div></section><div class="section-divider"></div><section id="research-&-publications"><h2>Research &amp; Publications</h2><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal of Scientific Development and Research</span>
                             <span class="paper-year">2026</span>
                         </div>
                         <div class="paper-title">Personal Branding in Student-Athletes: Its influence on Opportunities and recruitment in Modern Sports Ecosystems</div>
                         <div class="paper-abstract"></div>
-                        <a href="assets/doc-56061c6d07.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <a href="#" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
                     </div><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal of Research and Analytical Reviews</span>
@@ -600,7 +654,7 @@
                         </div>
                         <div class="paper-title">Weight Loss Drugs: A Growing Trend in Modern Healthcare</div>
                         <div class="paper-abstract"></div>
-                        <a href="assets/doc-3a4354c7ba.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <a href="#" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
                     </div><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal for Research Trends and Innovation</span>
@@ -608,7 +662,7 @@
                         </div>
                         <div class="paper-title">The influence of Social Media Marketing on Gym Supplements consumption Among Youth</div>
                         <div class="paper-abstract"></div>
-                        <a href="assets/doc-12bc457408.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <a href="#" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
                     </div><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal for Multidisciplinary Research</span>
@@ -616,52 +670,75 @@
                         </div>
                         <div class="paper-title">War in the Middle East: Impact on UAE Economy</div>
                         <div class="paper-abstract"></div>
-                        <a href="assets/doc-0a7a008084.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <a href="#" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
                     </div></section><div class="section-divider"></div><section id="projects"><h2>Projects</h2><div class="project-grid"><div class="project-card">
-                        <img src="assets/img-b33864c6e2.png" alt="Jadeite Fitness" class="project-image">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f0f4f8, #e2e8f0);"></div>
                         <div class="project-content">
-                            <h3>Jadeite Fitness</h3>
-                            <p>Founded a Dubai-inspired sportswear brand focused on premium activewear. The project includes brand concept development, market identification, business model shaping, and branding and marketing strategy creation.</p>
-                            <a href="http://jadeitefitness.com/" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+                            <h3>Jadeite Sportswear</h3>
+                            <p>Founded a Dubai-inspired sportswear brand focused on high-performance apparel promoting confidence and wellness.</p>
+                            
                         </div>
-                    </div></div></section><div class="section-divider"></div><section id="internships-&-programs"><h2>Internships &amp; Programs</h2><div class="experience-item">
-                        <div class="experience-header">
-                            <h3>Participant</h3>
-                            <span class="experience-duration">2025</span>
+                    </div><div class="project-card">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f0f4f8, #e2e8f0);"></div>
+                        <div class="project-content">
+                            <h3>Family Portfolio Trading</h3>
+                            <p>Managed six-figure trading activity for a family portfolio, focusing on disciplined decision-making and risk management.</p>
+                            
                         </div>
-                        <div class="experience-company">Develop understanding of sustainability and business functions</div>
-                        <div class="experience-description">Explored sustainability, finance, operations, and HR in industrial and business environments, gaining workplace skills and exposure to top business universities.</div>
-                    </div></section><div class="section-divider"></div><section id="leadership-programs"><h2>Leadership Programs</h2><div class="experience-item">
-                        <div class="experience-header">
-                            <h3>Participant</h3>
-                            <span class="experience-duration">2025</span>
-                        </div>
-                        <div class="experience-company">Workshop with Professor Chuck Garcia</div>
-                        <div class="experience-description">Gained communication, financial literacy, and business fundamentals. Developed critical thinking, problem-solving, and communication skills in a stimulating environment.</div>
-                    </div></section><div class="section-divider"></div><section id="certifications"><h2>Certifications</h2><div class="experience-item">
+                    </div></div></section><div class="section-divider"></div><section id="certifications"><h2>Certifications</h2><div class="experience-item">
                         
-                        <h3>GenAI for Executives &amp; Business Leaders</h3>
-                        <p>An introduction, integration strategy, and formulating use case courses on Coursera.</p>
-                        
-                    </div></section><div class="section-divider"></div><section id="honours-&-awards"><h2>Honours &amp; Awards</h2><div class="experience-item">
-                        
-                        <h3>Hult Business Competition</h3>
-                        <p>Leader of the group, reached Semi Finals, ranked the 1st School in the Middle East to reach this level of competition.</p>
-                        
-                    </div></section><div class="section-divider"></div><section id="athletics"><h2>Athletics</h2><div class="experience-item">
-                        
-                        <h3>School and Junior Varsity Sports</h3>
-                        <p>Represented school in over 40 national tournaments, including football, volleyball, basketball, and soccer. Achieved several trophies and medals.</p>
+                        <h3>GenAI for Executives &amp; Business Leaders: An introduction</h3>
+                        <p></p>
                         
                     </div><div class="experience-item">
                         
-                        <h3>Swimming and Tennis</h3>
-                        <p>Swam for 12 years, best swimmer; played tennis for 8 years, then switched to Padel.</p>
+                        <h3>GenAI for Execs &amp; Business Leaders Integration: Integration Strategy</h3>
+                        <p></p>
+                        
+                    </div><div class="experience-item">
+                        
+                        <h3>GenAI for Execs &amp; Business Leaders: Formulate Your Use Case</h3>
+                        <p></p>
+                        
+                    </div></section><div class="section-divider"></div><section id="athletics"><h2>Athletics</h2><div class="experience-item">
+                        
+                        <h3>MASAC Volleyball Junior Varsity</h3>
+                        <p>Represented school in numerous national competitions.</p>
+                        
+                    </div><div class="experience-item">
+                        
+                        <h3>MASAC Football Junior Varsity</h3>
+                        <p>Participated in national competitions and team preparations.</p>
+                        
+                    </div><div class="experience-item">
+                        
+                        <h3>MASAC Basketball Junior Varsity &amp; Middle School</h3>
+                        <p>Regular participant in school teams with many competitions.</p>
+                        
+                    </div><div class="experience-item">
+                        
+                        <h3>Soccer at Alliance Dubai Football Academy</h3>
+                        <p>Played for two years, developing skills in soccer.</p>
+                        
+                    </div><div class="experience-item">
+                        
+                        <h3>Swimming</h3>
+                        <p>Competed for 12 years, recognized as best swimmer.</p>
+                        
+                    </div><div class="experience-item">
+                        
+                        <h3>Tennis &amp; Padel</h3>
+                        <p>Played tennis for 8 years before switching to padel.</p>
                         
                     </div><div class="experience-item">
                         
                         <h3>Gym</h3>
-                        <p>Main sport currently.</p>
+                        <p>Main sport currently focusing on personal fitness.</p>
+                        
+                    </div></section><div class="section-divider"></div><section id="honours-&-awards"><h2>Honours &amp; Awards</h2><div class="experience-item">
+                        
+                        <h3>Hult Business Competition</h3>
+                        <p>Leader of the group, reached semi-finals, ranked the 1st school in Middle East.</p>
                         
                     </div></section><div class="section-divider"></div><section id="skills-&-languages"><h2>Skills &amp; Languages</h2><div class="experience-item">
                         
@@ -670,38 +747,27 @@
                         
                     </div><div class="experience-item">
                         
-                        <h3>Key Skills</h3>
+                        <h3>Skills</h3>
                         <p>Video making, writing and editing, Microsoft Office</p>
-                        
-                    </div></section><div class="section-divider"></div><section id="interests"><h2>Interests</h2><div class="experience-item">
-                        
-                        <h3>Travel</h3>
-                        <p>Travelled to over 17 countries.</p>
-                        
-                    </div><div class="experience-item">
-                        
-                        <h3>Financial markets and stock trading</h3>
-                        <p></p>
-                        
-                    </div><div class="experience-item">
-                        
-                        <h3>Entrepreneurship</h3>
-                        <p></p>
-                        
-                    </div><div class="experience-item">
-                        
-                        <h3>Gym and football</h3>
-                        <p></p>
-                        
-                    </div><div class="experience-item">
-                        
-                        <h3>Healthy nutrition &amp; wellbeing</h3>
-                        <p></p>
                         
                     </div></section><div class="section-divider"></div><section id="community-&-volunteering"><h2>Community &amp; Volunteering</h2><div class="community-item">
                         
-                        <h3>Cultural Exchange</h3>
-                        <p>Discovered Japanese culture.</p>
+                        <h3>Week without Wall in Japan</h3>
+                        <p>Discovered Japanese culture and engaged in cultural exchange.</p>
+                    </div></section><div class="section-divider"></div><section id="leadership-programs"><h2>Leadership Programs</h2><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Participant</h3>
+                            <span class="experience-duration">Dec 2025</span>
+                        </div>
+                        <div class="experience-company">Financial Literacy &amp; Leadership</div>
+                        <div class="experience-description">Attended workshop led by Professor Chuck Garcia, gaining communication and financial literacy skills.</div>
+                    </div><div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Participant</h3>
+                            <span class="experience-duration">2024</span>
+                        </div>
+                        <div class="experience-company">University of Cambridge Judge Business School Youth Programmes</div>
+                        <div class="experience-description">Enhanced business fundamentals and personal skills through immersive, case-based learning.</div>
                     </div></section><div class="section-divider"></div>
     </main>
 
