@@ -47,6 +47,20 @@
             gap: 2rem;
         }
 
+        /* Shared item media (image / PDF / link) — every section type supports all three */
+        .item-media-img {
+            display: block; max-width: 260px; width: 100%; max-height: 170px;
+            object-fit: cover; border-radius: 10px; margin: 0.7rem 0 0.2rem;
+        }
+        .item-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.7rem; }
+        .item-actions a {
+            display: inline-flex; align-items: center; gap: 0.3rem;
+            font-size: 0.8rem; font-weight: 600; text-decoration: none;
+            padding: 0.36rem 0.8rem; border-radius: 999px;
+            border: 1px solid #0ea5e9; color: #0ea5e9;
+            background: transparent; transition: background 0.2s, color 0.2s;
+        }
+        .item-actions a:hover { background: #0ea5e9; color: #fff; }
         nav .logo {
             font-size: 1.25rem;
             font-weight: 600;
@@ -574,7 +588,7 @@
         <nav>
             <a href="#" class="logo">J</a>
             <ul class="links">
-                <li><a href="#education">Education</a></li><li><a href="#internships-&-programs">Internships &amp; Programs</a></li><li><a href="#research-&-publications">Research &amp; Publications</a></li><li><a href="#projects">Projects</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#athletics">Athletics</a></li><li><a href="#honours-&-awards">Honours &amp; Awards</a></li><li><a href="#skills-&-languages">Skills &amp; Languages</a></li><li><a href="#community-&-volunteering">Community &amp; Volunteering</a></li><li><a href="#leadership-programs">Leadership Programs</a></li><li><a href="#photo-gallery">Photo Gallery</a></li>
+                <li><a href="#education">Education</a></li><li><a href="#internships-programs">Internships &amp; Programs</a></li><li><a href="#research-publications">Research &amp; Publications</a></li><li><a href="#projects">Projects</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#athletics">Athletics</a></li><li><a href="#honours-awards">Honours &amp; Awards</a></li><li><a href="#skills-languages">Skills &amp; Languages</a></li><li><a href="#community-volunteering">Community &amp; Volunteering</a></li><li><a href="#leadership-programs">Leadership Programs</a></li><li><a href="#photo-gallery">Photo Gallery</a></li>
                 <li><a href="assets/doc-4909aac7f7.pdf" class="resume-btn" target="_blank" rel="noopener noreferrer" download>Resume</a></li>
             </ul>
         </nav>
@@ -597,6 +611,7 @@
                         </div>
                         <div class="experience-company">GEMS Dubai American Academy (DAA)</div>
                         <div class="experience-description"></div>
+                        <img src="assets/img-4e54d48028.png" alt="Grade 11 student, IB Diploma" loading="lazy" class="item-media-img">
                     </div><div class="experience-item">
                         <div class="experience-header">
                             <h3>Lower School and Middle School</h3>
@@ -604,13 +619,15 @@
                         </div>
                         <div class="experience-company">Casablanca American Academy (CAS)</div>
                         <div class="experience-description"></div>
-                    </div></section><div class="section-divider"></div><section id="internships-&-programs"><h2>Internships &amp; Programs</h2><div class="experience-item">
+                        
+                    </div></section><div class="section-divider"></div><section id="internships-programs"><h2>Internships &amp; Programs</h2><div class="experience-item">
                         <div class="experience-header">
                             <h3>Summer Intern</h3>
                             <span class="experience-duration">August 2026</span>
                         </div>
                         <div class="experience-company">OCP Group</div>
                         <div class="experience-description">Gained insights into sustainability and decarbonization in the phosphate industry, explored business functions, and developed foundational workplace skills.</div>
+                        
                     </div><div class="experience-item">
                         <div class="experience-header">
                             <h3>Participant</h3>
@@ -618,6 +635,7 @@
                         </div>
                         <div class="experience-company">Bocconi University Summer School</div>
                         <div class="experience-description">Collaborated on real-world projects and explored business fields such as economics and finance.</div>
+                        
                     </div><div class="experience-item">
                         <div class="experience-header">
                             <h3>Summer Intern</h3>
@@ -625,6 +643,7 @@
                         </div>
                         <div class="experience-company">AbbVie Biopharmaceuticals</div>
                         <div class="experience-description">Gained introductory experience in the biopharmaceutical industry, focusing on finance and compliance.</div>
+                        
                     </div><div class="experience-item">
                         <div class="experience-header">
                             <h3>Summer Intern</h3>
@@ -632,6 +651,7 @@
                         </div>
                         <div class="experience-company">Casablanca Stock Exchange</div>
                         <div class="experience-description">Learned about trading mechanisms, financial instruments, and market regulations.</div>
+                        <div class="item-actions"><a href="assets/doc-8339558ac2.pdf" class="item-doc" target="_blank" rel="noopener noreferrer" download>Download PDF</a></div>
                     </div><div class="experience-item">
                         <div class="experience-header">
                             <h3>Participant</h3>
@@ -639,14 +659,15 @@
                         </div>
                         <div class="experience-company">Beau Soleil Collège Alpin International Summer Camp</div>
                         <div class="experience-description">Developed leadership and language skills in a multicultural environment while enhancing global awareness.</div>
-                    </div></section><div class="section-divider"></div><section id="research-&-publications"><h2>Research &amp; Publications</h2><div class="research-paper">
+                        <img src="assets/img-79e99a8a8a.png" alt="Participant" loading="lazy" class="item-media-img">
+                    </div></section><div class="section-divider"></div><section id="research-publications"><h2>Research &amp; Publications</h2><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal of Scientific Development and Research</span>
                             <span class="paper-year">2026</span>
                         </div>
                         <div class="paper-title">Personal Branding in Student-Athletes: Its influence on Opportunities and recruitment in Modern Sports Ecosystems</div>
                         <div class="paper-abstract">In modern sports environments, athletic performance alone is no longer the sole determinant of success for student-athletes. Personal branding has emerged as a major factor influencing visibility, rec...</div>
-                        <a href="assets/doc-2fd5340597.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <img src="assets/img-614a233f18.png" alt="Personal Branding in Student-Athletes: Its influence on Opportunities and recruitment in Modern Sports Ecosystems" loading="lazy" class="item-media-img"><div class="item-actions"><a href="assets/doc-2fd5340597.pdf" class="item-doc" target="_blank" rel="noopener noreferrer" download>Download PDF</a><a href="https://www.ijsdr.org" class="item-link" target="_blank" rel="noopener noreferrer">Open link ↗</a></div>
                     </div><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal of Research and Analytical Reviews</span>
@@ -654,7 +675,7 @@
                         </div>
                         <div class="paper-title">Weight Loss Drugs: A Growing Trend in Modern Healthcare</div>
                         <div class="paper-abstract">Weight loss drugs have become one of the most discussed developments in global healthcare in recent years. Originally designed to treat obesity and type 2 diabetes, many of these medications are now w...</div>
-                        <a href="assets/doc-db80531954.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <img src="assets/img-38a03ae9d3.png" alt="Weight Loss Drugs: A Growing Trend in Modern Healthcare" loading="lazy" class="item-media-img"><div class="item-actions"><a href="assets/doc-db80531954.pdf" class="item-doc" target="_blank" rel="noopener noreferrer" download>Download PDF</a><a href="https://www.ijrar.org" class="item-link" target="_blank" rel="noopener noreferrer">Open link ↗</a></div>
                     </div><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal for Research Trends and Innovation</span>
@@ -662,7 +683,7 @@
                         </div>
                         <div class="paper-title">The influence of Social Media Marketing on Gym Supplements consumption Among Youth</div>
                         <div class="paper-abstract">The fitness supplement industry has experienced significant global growth over the past decade, driven largely by social media marketing, influencer culture, and the expansion of digital fitness commu...</div>
-                        <a href="assets/doc-cd15530d4f.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <img src="assets/img-711a47e307.png" alt="The influence of Social Media Marketing on Gym Supplements consumption Among Youth" loading="lazy" class="item-media-img"><div class="item-actions"><a href="assets/doc-cd15530d4f.pdf" class="item-doc" target="_blank" rel="noopener noreferrer" download>Download PDF</a><a href="https://www.ijrti.org" class="item-link" target="_blank" rel="noopener noreferrer">Open link ↗</a></div>
                     </div><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal for Multidisciplinary Research</span>
@@ -670,7 +691,7 @@
                         </div>
                         <div class="paper-title">War in the Middle East: Impact on UAE Economy</div>
                         <div class="paper-abstract">The Middle East has experienced repeated political conflicts and wars over the past several decades. These events have influenced regional economies in different ways, especially countries that are ec...</div>
-                        <a href="assets/doc-25829e05d6.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <img src="assets/img-8b483af3ed.png" alt="War in the Middle East: Impact on UAE Economy" loading="lazy" class="item-media-img"><div class="item-actions"><a href="assets/doc-25829e05d6.pdf" class="item-doc" target="_blank" rel="noopener noreferrer" download>Download PDF</a></div>
                     </div><div class="research-paper">
                         <div class="paper-meta">
                             <span class="paper-journal">International Journal of Research and Analytical Reviews</span>
@@ -678,13 +699,22 @@
                         </div>
                         <div class="paper-title">Pricing Strategies in Skill-Based Education Markets: A Case Study of Football Training Institutes</div>
                         <div class="paper-abstract">Skill-based education markets, particularly football training academies, have expanded rapidly due to increasing global interest in professional sports careers, youth development systems, and fitness-...</div>
-                        <a href="assets/doc-e5291f81f0.pdf" class="paper-download" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+                        <img src="assets/img-ace1358a1e.png" alt="Pricing Strategies in Skill-Based Education Markets: A Case Study of Football Training Institutes" loading="lazy" class="item-media-img"><div class="item-actions"><a href="assets/doc-e5291f81f0.pdf" class="item-doc" target="_blank" rel="noopener noreferrer" download>Download PDF</a></div>
+                    </div><div class="research-paper">
+                        <div class="paper-meta">
+                            <span class="paper-journal"></span>
+                            <span class="paper-year"></span>
+                        </div>
+                        <div class="paper-title">Jad Dubai 2nd Sem 3.4</div>
+                        <div class="paper-abstract"></div>
+                        <img src="assets/img-3d366dcf5e.png" alt="Jad Dubai 2nd Sem 3.4" loading="lazy" class="item-media-img">
                     </div></section><div class="section-divider"></div><section id="projects"><h2>Projects</h2><div class="project-grid"><div class="project-card">
                         <img src="assets/img-fadfe620fc.png" alt="Jadeite Fitness" class="project-image">
                         <div class="project-content">
                             <h3>Jadeite Fitness</h3>
                             <p>Founded a Dubai-inspired sportswear brand focused on high-performance apparel promoting confidence and wellness.</p>
                             <a href="http://jadeitefitness.com/" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
+                            
                         </div>
                     </div><div class="project-card">
                         <img src="assets/img-49d604212b.png" alt="Family Portfolio Trading" class="project-image">
@@ -692,76 +722,91 @@
                             <h3>Family Portfolio Trading</h3>
                             <p>Managed six-figure trading activity for a family portfolio, focusing on disciplined decision-making and risk management.</p>
                             
+                            
                         </div>
                     </div></div></section><div class="section-divider"></div><section id="certifications"><h2>Certifications</h2><div class="experience-item">
                         
                         <h3>GenAI for Executives &amp; Business Leaders: An introduction</h3>
                         <p></p>
                         
+                        
                     </div><div class="experience-item">
                         
                         <h3>GenAI for Execs &amp; Business Leaders Integration: Integration Strategy</h3>
                         <p></p>
+                        
                         
                     </div><div class="experience-item">
                         
                         <h3>GenAI for Execs &amp; Business Leaders: Formulate Your Use Case</h3>
                         <p></p>
                         
+                        
                     </div></section><div class="section-divider"></div><section id="athletics"><h2>Athletics</h2><div class="experience-item">
                         
                         <h3>MASAC Volleyball Junior Varsity</h3>
                         <p>Represented school in numerous national competitions.</p>
                         
-                    </div><div class="experience-item">
                         
+                    </div><div class="experience-item">
+                        <img src="assets/img-7586222828.jpg" alt="MASAC Football Junior Varsity" style="max-width:220px;max-height:140px;border-radius:8px;object-fit:cover;display:block;margin-bottom:10px;">
                         <h3>MASAC Football Junior Varsity</h3>
                         <p>Participated in national competitions and team preparations.</p>
                         
-                    </div><div class="experience-item">
                         
+                    </div><div class="experience-item">
+                        <img src="assets/img-95b685ea7e.jpg" alt="MASAC Basketball Junior Varsity &amp; Middle School" style="max-width:220px;max-height:140px;border-radius:8px;object-fit:cover;display:block;margin-bottom:10px;">
                         <h3>MASAC Basketball Junior Varsity &amp; Middle School</h3>
                         <p>Regular participant in school teams with many competitions.</p>
                         
-                    </div><div class="experience-item">
                         
+                    </div><div class="experience-item">
+                        <img src="assets/img-6d3a078b97.jpg" alt="Soccer at Alliance Dubai Football Academy" style="max-width:220px;max-height:140px;border-radius:8px;object-fit:cover;display:block;margin-bottom:10px;">
                         <h3>Soccer at Alliance Dubai Football Academy</h3>
                         <p>Played for two years, developing skills in soccer.</p>
                         
-                    </div><div class="experience-item">
                         
+                    </div><div class="experience-item">
+                        <img src="assets/img-75642360a6.jpg" alt="Swimming" style="max-width:220px;max-height:140px;border-radius:8px;object-fit:cover;display:block;margin-bottom:10px;">
                         <h3>Swimming</h3>
                         <p>Competed for 12 years, recognized as best swimmer.</p>
+                        
                         
                     </div><div class="experience-item">
                         
                         <h3>Tennis &amp; Padel</h3>
                         <p>Played tennis for 8 years before switching to padel.</p>
                         
-                    </div><div class="experience-item">
                         
+                    </div><div class="experience-item">
+                        <img src="assets/img-15a1614de0.jpg" alt="Gym" style="max-width:220px;max-height:140px;border-radius:8px;object-fit:cover;display:block;margin-bottom:10px;">
                         <h3>Gym</h3>
                         <p>Main sport currently focusing on personal fitness.</p>
                         
-                    </div></section><div class="section-divider"></div><section id="honours-&-awards"><h2>Honours &amp; Awards</h2><div class="experience-item">
+                        
+                    </div></section><div class="section-divider"></div><section id="honours-awards"><h2>Honours &amp; Awards</h2><div class="experience-item">
                         
                         <h3>Hult Business Competition</h3>
                         <p>Leader of the group, reached semi-finals, ranked the 1st school in Middle East.</p>
                         
-                    </div></section><div class="section-divider"></div><section id="skills-&-languages"><h2>Skills &amp; Languages</h2><div class="experience-item">
+                        
+                    </div></section><div class="section-divider"></div><section id="skills-languages"><h2>Skills &amp; Languages</h2><div class="experience-item">
                         
                         <h3>Languages</h3>
                         <p>English, French, Arabic</p>
+                        
                         
                     </div><div class="experience-item">
                         
                         <h3>Skills</h3>
                         <p>Video making, writing and editing, Microsoft Office</p>
                         
-                    </div></section><div class="section-divider"></div><section id="community-&-volunteering"><h2>Community &amp; Volunteering</h2><div class="community-item">
                         
+                    </div></section><div class="section-divider"></div><section id="community-volunteering"><h2>Community &amp; Volunteering</h2><div class="community-item">
+                        <img src="assets/img-35276c8d19.jpg" alt="Week without Wall in Japan" style="max-width:220px;max-height:140px;border-radius:8px;object-fit:cover;display:block;margin-bottom:10px;">
                         <h3>Week without Wall in Japan</h3>
                         <p>Discovered Japanese culture and engaged in cultural exchange.</p>
+                        
                     </div></section><div class="section-divider"></div><section id="leadership-programs"><h2>Leadership Programs</h2><div class="experience-item">
                         <div class="experience-header">
                             <h3>Participant</h3>
@@ -769,6 +814,7 @@
                         </div>
                         <div class="experience-company">Financial Literacy &amp; Leadership</div>
                         <div class="experience-description">Attended workshop led by Professor Chuck Garcia, gaining communication and financial literacy skills.</div>
+                        <img src="assets/img-603faeff66.png" alt="Participant" loading="lazy" class="item-media-img">
                     </div><div class="experience-item">
                         <div class="experience-header">
                             <h3>Participant</h3>
@@ -776,6 +822,7 @@
                         </div>
                         <div class="experience-company">University of Cambridge Judge Business School Youth Programmes</div>
                         <div class="experience-description">Enhanced business fundamentals and personal skills through immersive, case-based learning.</div>
+                        <img src="assets/img-20fdc0e774.png" alt="Participant" loading="lazy" class="item-media-img">
                     </div></section><div class="section-divider"></div><section id="photo-gallery"><h2>Photo Gallery</h2><div class="gallery"><div class="gallery-item">
                         <img src="assets/img-111a3723c0.png" alt="Financial Literacy &amp; Leadership Workshop by Professor Chuck Garcia" class="gallery-image">
                         <div class="gallery-caption">Financial Literacy &amp; Leadership Workshop by Professor Chuck Garcia</div>
@@ -786,20 +833,65 @@
                         <img src="assets/img-1e9221c696.png" alt="Financial Literacy &amp; Leadership Workshop by Professor Chuck Garcia" class="gallery-image">
                         <div class="gallery-caption">Financial Literacy &amp; Leadership Workshop by Professor Chuck Garcia</div>
                     </div><div class="gallery-item">
-                        <img src="assets/img-09dbaa8a76.png" alt="The Influence of Social Media Marketing on Gym Supplements Consumption Among Youth" class="gallery-image">
-                        <div class="gallery-caption">The Influence of Social Media Marketing on Gym Supplements Consumption Among Youth</div>
+                        <img src="assets/img-bbc86a93ea.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
                     </div><div class="gallery-item">
-                        <img src="assets/img-95cfe2589a.png" alt="Weight Loss Drugs: A Growing Trend in Modern Healthcare" class="gallery-image">
-                        <div class="gallery-caption">Weight Loss Drugs: A Growing Trend in Modern Healthcare</div>
+                        <img src="assets/img-e4cb99f64f.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
                     </div><div class="gallery-item">
-                        <img src="assets/img-cf34a79a50.png" alt="Pricing Strategies in Skill-Based Education Markets: A Case Study of Football Training Institutes" class="gallery-image">
-                        <div class="gallery-caption">Pricing Strategies in Skill-Based Education Markets: A Case Study of Football Training Institutes</div>
+                        <img src="assets/img-c6da9d0040.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
                     </div><div class="gallery-item">
-                        <img src="assets/img-4de9d50fff.png" alt="War in the Middle East: Impact on UAE Economy" class="gallery-image">
-                        <div class="gallery-caption">War in the Middle East: Impact on UAE Economy</div>
+                        <img src="assets/img-21ca3bd19d.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
                     </div><div class="gallery-item">
-                        <img src="assets/img-e17d9413af.png" alt="Personal Branding in Student-Athletes: Its Influence on Opportunities and Recruitment in Modern Sports Ecosystems" class="gallery-image">
-                        <div class="gallery-caption">Personal Branding in Student-Athletes: Its Influence on Opportunities and Recruitment in Modern Sports Ecosystems</div>
+                        <img src="assets/img-a92315461c.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-9722d84760.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-90c3c5dbf6.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-a0fc60579b.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-c2ad5d9f13.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-ee39e38b9a.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-870580709b.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-3b7e048080.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-b9b1f40769.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-15abffcdc9.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-855c9f9122.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-45b2ae04cd.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-6468b4a435.png" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-767a4ac61d.png" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-0f186ff3d1.png" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
+                    </div><div class="gallery-item">
+                        <img src="assets/img-2e1ff0a150.jpg" alt="" class="gallery-image">
+                        <div class="gallery-caption"></div>
                     </div></div></section><div class="section-divider"></div>
     </main>
 
@@ -831,7 +923,7 @@
                 const href = this.getAttribute('href');
                 if (href !== '#') {
                     e.preventDefault();
-                    const element = document.querySelector(href);
+                    const element = document.getElementById(href.slice(1));
                     if (element) {
                         element.scrollIntoView({ behavior: 'smooth' });
                     }
